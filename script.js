@@ -109,7 +109,5 @@ button.addEventListener('click', function() {
 buttonMore.addEventListener('click', function() {
 
     buttonMore.classList.add('show2')
-    let count = 0
-    
     
 })
