@@ -60,14 +60,14 @@ button.addEventListener('click', function() {
     button.classList.add('touchButton')
     setTimeout(removeTouch, 250)
 
-    if (counter == 0) {
-        document.querySelector('.start').style.display = 'none'
-        document.querySelector('.image1').style.display = 'block'
-        document.querySelector('.buttonMore').style.display = 'flex'
-    } else {
-        document.querySelector('.image1').style.display = 'none'
-        document.querySelector('.image2').style.display = 'block'
-    }
+    // if (counter == 0) {
+    //     document.querySelector('.start').style.display = 'none'
+    //     document.querySelector('.image1').style.display = 'block'
+    //     document.querySelector('.buttonMore').style.display = 'flex'
+    // } else {
+    //     document.querySelector('.image1').style.display = 'none'
+    //     document.querySelector('.image2').style.display = 'block'
+    // }
 
     // let randomIndex = getRandomIndex(artists)
     // let randomElememt = artists[randomIndex]
@@ -90,22 +90,30 @@ button.addEventListener('click', function() {
     //     printText(artistInfo)
     // }
 
-    // function addShow() {
-    //     card.classList.add('show1')
-    // }
+    function addShow() {
+        card.classList.add('show1')
+    }
 
-    // function removeShow() {
-    //     card.classList.remove('show2')
-    // }
+    function removeShow() {
+        card.classList.remove('show2')
+    }
+
+    function testing() {
+        document.querySelector('.image1').style.display = 'none'
+        document.querySelector('.image2').style.display = 'block'
+    }
 
     if (counter == 0) {
         card.classList.add('show1')
-        showElements()
+        document.querySelector('.start').style.display = 'none'
+        document.querySelector('.image1').style.display = 'block'
+        document.querySelector('.buttonMore').style.display = 'flex'
+        // showElements()
     } else {
         card.classList.add('show2')
         card.classList.remove('show1')
         setTimeout(removeShow, 500)
-        setTimeout(showElements, 500)
+        setTimeout(testing, 500)
         setTimeout(addShow, 500)
     }
     counter++
