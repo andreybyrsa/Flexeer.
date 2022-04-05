@@ -1,9 +1,9 @@
-const artists = [
-    {text: 'Travis Scott - американский хип-хоп исполнитель. Трек «Sicko mode» является одним из самых прослушиваемых на Spotify', icon: 'https://www.revolt.tv/wp-content/uploads/2021/08/46c48b6f0a02a5609a28c29bdef932b304_travis_scott.rsquare.w1200.jpg'},
-    {text: 'Playboi Carti сотрудничал почти со всеми известными иполнителями: Lil Uzi Vert, Chief Keef и др. Его треки используют многие тик-токеры', icon: 'https://biographymask.com/wp-content/uploads/2021/01/Playboi-Carti-singer-1200x1200.jpg'},
-    {text: '«Gucci Gang» - самый популярный трек Lil Pump. Клип на эту песню набрал более 1 млрд просмотров на YouTube', icon: 'https://vinyl-is.ru/upload/iblock/2af/2af0cf15705939385c1ad78dc768f3a1.jpg'},
-    {text: 'Big Baby Tape - единственный рэпер из российских исполнителй, который сотрудничал с Kizaru за неданее время', icon: 'https://img01.rl0.ru/afisha/c1200x1200i/daily.afisha.ru/uploads/images/b/03/b03c995d3fe733fea546489e952de432.jpg'}
-]
+// const artists = [
+//     {text: 'Travis Scott - американский хип-хоп исполнитель. Трек «Sicko mode» является одним из самых прослушиваемых на Spotify', icon: 'https://www.revolt.tv/wp-content/uploads/2021/08/46c48b6f0a02a5609a28c29bdef932b304_travis_scott.rsquare.w1200.jpg'},
+//     {text: 'Playboi Carti сотрудничал почти со всеми известными иполнителями: Lil Uzi Vert, Chief Keef и др. Его треки используют многие тик-токеры', icon: 'https://biographymask.com/wp-content/uploads/2021/01/Playboi-Carti-singer-1200x1200.jpg'},
+//     {text: '«Gucci Gang» - самый популярный трек Lil Pump. Клип на эту песню набрал более 1 млрд просмотров на YouTube', icon: 'https://vinyl-is.ru/upload/iblock/2af/2af0cf15705939385c1ad78dc768f3a1.jpg'},
+//     {text: 'Big Baby Tape - единственный рэпер из российских исполнителй, который сотрудничал с Kizaru за неданее время', icon: 'https://img01.rl0.ru/afisha/c1200x1200i/daily.afisha.ru/uploads/images/b/03/b03c995d3fe733fea546489e952de432.jpg'}
+// ]
 
 //     {text: 'Kizaru Совместно с BBT выпустил альбом «BANDANA I», также они ведут работу над «BANDANA II». Является «Тrue» рэпером', icon: 'img/5.PNG'},
 //     {text: 'OG Buda - один из хип-хоп исполнителей, который смог правильно преподнести детройт стиль', icon: 'img/6.PNG'},
@@ -62,38 +62,41 @@ button.addEventListener('click', function() {
 
     if (counter == 0) {
         document.querySelector('.start').style.display = 'none'
-        document.querySelector('.image').style.display = 'block'
+        document.querySelector('.image1').style.display = 'block'
         document.querySelector('.buttonMore').style.display = 'flex'
-    }
-
-    let randomIndex = getRandomIndex(artists)
-    let randomElememt = artists[randomIndex]
-    let exception = artistsExceptions[0]
-
-    if (counter == 0) {
-        artists.splice(randomIndex, 1)
-        artistsExceptions.push(randomElememt)
     } else {
-        artists.splice(randomIndex, 1)
-        artists.push(exception)
-        artistsExceptions.pop(exception)
-        artistsExceptions.push(randomElememt)
+        document.querySelector('.image1').style.display = 'none'
+        document.querySelector('.image2').style.display = 'block'
     }
 
-    function showElements() {
-        image.src = randomElememt.icon
-        artistInfo.textContent = randomElememt.text
-        cursor.textContent = '|'
-        printText(artistInfo)
-    }
+    // let randomIndex = getRandomIndex(artists)
+    // let randomElememt = artists[randomIndex]
+    // let exception = artistsExceptions[0]
 
-    function addShow() {
-        card.classList.add('show1')
-    }
+    // if (counter == 0) {
+    //     artists.splice(randomIndex, 1)
+    //     artistsExceptions.push(randomElememt)
+    // } else {
+    //     artists.splice(randomIndex, 1)
+    //     artists.push(exception)
+    //     artistsExceptions.pop(exception)
+    //     artistsExceptions.push(randomElememt)
+    // }
 
-    function removeShow() {
-        card.classList.remove('show2')
-    }
+    // function showElements() {
+    //     image.src = randomElememt.icon
+    //     artistInfo.textContent = randomElememt.text
+    //     cursor.textContent = '|'
+    //     printText(artistInfo)
+    // }
+
+    // function addShow() {
+    //     card.classList.add('show1')
+    // }
+
+    // function removeShow() {
+    //     card.classList.remove('show2')
+    // }
 
     if (counter == 0) {
         card.classList.add('show1')
