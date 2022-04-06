@@ -10,6 +10,7 @@ First repository after 2 weeks in frontend learning
 - [ ] Set up a function call for artist info ('span' with clearInterval/letterTimeout = 0)
 - [ ] Set uo second 'click' function call for button 'more'
 - [ ] Script + css code for section with class 'sectionMusic' (elements with changing position)
+- [ ] Optimise app for github pages and for mobile version
   
 # Requirements
 This work has already been added to the github pages, link:
