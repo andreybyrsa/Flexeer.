@@ -58,8 +58,8 @@ body {
     display: block;
     background-color: rgba(240, 248, 255, 0);
     position: relative;
-    width: 50%;
-    height: 55vh;
+    width: 60%;
+    height: 50vh;
     margin: 30px auto;
 }
 
@@ -93,10 +93,22 @@ body {
 
 .artistCard {
     display: block;
-    margin: 15px auto;
-    width: 50%;
+    padding-top: 15px;
+    margin: auto;
+    width: 40%;
     text-align: center;
 }
+
+/* @keyframes slide {
+    from {
+        margin: auto;
+        padding-top: 15px;
+    }
+    to {
+        margin: 0;
+        padding-top: 50px;
+    }
+} */
 
 .show1 {
     display: block;
@@ -118,12 +130,17 @@ body {
     to {opacity: 0;}
 }
 
+.images {
+    display: block;
+    margin: auto;
+    width: 250px;
+}
+
 .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12, .image13, .image14, .image15 {
     display: none;
-    margin: auto;
     border-radius: 10px;
     border: solid white 1px;
-    width: 75%;
+    width: 100%;
     box-shadow: 4px 4px 3px white;
 }
 
@@ -134,7 +151,6 @@ body {
     color: white;
     vertical-align: middle;
     font-size: 14px;
-    width: 65%;
 }
 
 .cursor {
@@ -150,6 +166,49 @@ body {
 	0% {color: white;}
 	50% {color: #323131}
 	100% {color: white;}
+}
+
+.musicBlock {
+    display: none;
+    margin: auto;
+    padding-top: 40px;
+    width: 70%;
+    height: 25%;
+}
+
+.linkBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song, .songs, .album {
+    display: block;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    background-color: #323131;
+    border: solid white 1px;
+    border-radius: 10px;
+    transition: opacity .2s;
+}
+
+.song:hover {
+    opacity: .5;
+}
+
+.songs:hover {
+    opacity: .5;
+}
+
+.album:hover {
+    opacity: .5;
+}
+
+.songLink, .songsLink, .albumLink {
+    color: white;
+    font-size: 14px;
+    text-decoration-line: none;
 }
 
 .buttonMore {
@@ -171,13 +230,20 @@ body {
 
 .cooperating {
     display: block;
-    margin: 20px auto;
+    position: relative;
+    margin: auto;
     width: 50%;
-    height: 5vh;
+    height: 80px;
+}
+
+.footerLink {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .link {
-    padding-left: 0;
     font-size: 20px;
     color: white;
     text-decoration-line: none;
@@ -187,3 +253,41 @@ body {
 .link:hover {
     color: grey;
 }
+
+/* Responsive starts here */
+
+/* @media screen and (max-width: 1199px) {
+    .card {
+        height: 45vh;
+    }
+    .images {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card {
+        height: 40vh;
+    }
+    .images {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .card {
+        height: 40vh;
+    }
+    .images {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .card {
+        height: 40vh;
+    }
+    .images {
+        width: 100px;
+    }
+} */
