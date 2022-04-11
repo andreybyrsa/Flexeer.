@@ -276,6 +276,10 @@ body {
     .musicBlock {
         width: 100%;
     }
+
+    .song, .songs, .album {
+        width: 110px;
+    }
     
     .cooperating {
         margin: 0;
