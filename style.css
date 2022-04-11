@@ -59,7 +59,7 @@ body {
     background-color: rgba(240, 248, 255, 0);
     position: relative;
     width: 60%;
-    height: 50vh;
+    height: 380px;
     margin: 30px auto;
 }
 
@@ -171,9 +171,8 @@ body {
 .musicBlock {
     display: none;
     margin: auto;
-    padding-top: 40px;
-    width: 70%;
-    height: 25%;
+    width: 50%;
+    height: 20%;
 }
 
 .linkBlock {
@@ -256,38 +255,33 @@ body {
 
 /* Responsive starts here */
 
-/* @media screen and (max-width: 1199px) {
-    .card {
-        height: 45vh;
+@media screen and (max-width: 510px) {
+    .header {
+        width: 90%;
+        height: 20%;
     }
+    .card {
+        width: 80%;
+        height: 350px;
+    }
+
+    .artistCard {
+        width: 100%;
+    }
+
     .images {
-        width: 230px;
+        width: 200px;
+    }
+
+    .musicBlock {
+        width: 100%;
+    }
+    
+    .cooperating {
+        margin: 0;
+    }
+
+    .footerLink {
+        padding-left: 15px;
     }
 }
-
-@media screen and (max-width: 991px) {
-    .card {
-        height: 40vh;
-    }
-    .images {
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 795px) {
-    .card {
-        height: 40vh;
-    }
-    .images {
-        width: 140px;
-    }
-}
-
-@media screen and (max-width: 610px) {
-    .card {
-        height: 40vh;
-    }
-    .images {
-        width: 100px;
-    }
-} */
