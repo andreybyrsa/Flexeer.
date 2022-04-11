@@ -210,6 +210,12 @@ body {
     text-decoration-line: none;
 }
 
+.blockMore {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 50%;
+}
 .buttonMore {
     display: none;
     cursor: pointer;
@@ -260,9 +266,14 @@ body {
         width: 90%;
         height: 20%;
     }
+
+    .button:hover {
+        opacity: 1;
+    }
+
     .card {
         width: 80%;
-        height: 350px;
+        height: 325px;
     }
 
     .artistCard {
@@ -277,8 +288,28 @@ body {
         width: 100%;
     }
 
+    .blockMore {
+        width: 100%;
+    }
+
+    .buttonMore {
+        right: 15px;
+    }
+
     .song, .songs, .album {
         width: 110px;
+    }
+
+    .song:hover {
+        opacity: 1;
+    }
+    
+    .songs:hover {
+        opacity: 1;
+    }
+    
+    .album:hover {
+        opacity: 1;
     }
     
     .cooperating {
