@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 50%;
-    height: 10vh;
+    height: 10%;
     margin: 12vh auto 0 auto;
 }
 
@@ -171,7 +171,7 @@ body {
 .musicBlock {
     display: none;
     margin: auto;
-    width: 50%;
+    width: 40%;
     height: 20%;
 }
 
@@ -182,14 +182,14 @@ body {
 }
 
 .song, .songs, .album {
-    display: block;
+    display: none;
     cursor: pointer;
     height: 40px;
     width: 120px;
     background-color: #323131;
     border: solid white 1px;
     border-radius: 10px;
-    transition: opacity .2s;
+    transition: opacity .3s;
 }
 
 .song:hover {
@@ -205,13 +205,22 @@ body {
 }
 
 .songLink, .songsLink, .albumLink {
+    display: flex;
+    text-decoration-line: none;
+    width: 100%;
+    height: 100%;
+}
+
+.textLink {
+    margin: auto;
     color: white;
     font-size: 14px;
-    text-decoration-line: none;
 }
+
 
 .blockMore {
     display: block;
+    padding-top: 5px;
     position: relative;
     margin: auto;
     width: 50%;

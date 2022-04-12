@@ -6,7 +6,7 @@ let artists = [
     {icon: document.querySelector('.image5'), text: 'Kizaru Совместно с BBT выпустил альбом «BANDANA I», также они ведут работу над «BANDANA II». Является «Тrue» рэпером', song: 'https://www.youtube.com/watch?v=xDVqHpoPCnU', songs: 'https://www.youtube.com/watch?v=b8kpcGjSYdw' , album: 'https://www.youtube.com/watch?v=l3LQnlevl9s'},
     {icon: document.querySelector('.image6'), text: 'OG Buda - один из хип-хоп исполнителей, который смог правильно преподнести детройт стиль', song: 'https://www.youtube.com/watch?v=W3D3wSrk7ao', songs: 'https://www.youtube.com/watch?v=4BRt2jU6DME', album: 'https://www.youtube.com/watch?v=Ab1-cjhkxxE'},
     {icon: document.querySelector('.image7'), text: 'Blago white (Blago Белый, Yung Tsar) - американский исполнитель, прожил большую часть жизни в России. Снялся в интервью у «ВПИСКА»', song: 'https://www.youtube.com/watch?v=T-eBHmbUPsw', songs: 'https://www.youtube.com/watch?v=-O37rya_nFU', album: 'https://www.youtube.com/watch?v=ZOO565eyjT0'},
-    // {icon: document.querySelector('.image8'), text: 'Morgenshtern - самый обсуждаемый артист и шоу-мен, является отличным маркетологом, благодаря чему и полчуил популярность', song: 'https://www.youtube.com/watch?v=SsvM80bIA1k', songs: 'https://www.youtube.com/watch?v=c_I9CrcJHfM', album: 'https://www.youtube.com/watch?v=eV-DHvPP6d8&list=PLyJihFoIZ6EhbtRYEMq8CT0OXkella6Da'},
+    // {icon: document.querySelector('.image8`'), text: 'Morgenshtern - самый обсуждаемый артист и шоу-мен, является отличным маркетологом, благодаря чему и полчуил популярность', song: 'https://www.youtube.com/watch?v=SsvM80bIA1k', songs: 'https://www.youtube.com/watch?v=c_I9CrcJHfM', album: 'https://www.youtube.com/watch?v=eV-DHvPP6d8&list=PLyJihFoIZ6EhbtRYEMq8CT0OXkella6Da'},
     {icon: document.querySelector('.image9'), text: 'Pop Smoke - представитель бруклинского дрилла. Альбом рэпера «Meet Yhe Woo 2» презентовали на Billboard 200', song: 'https://www.youtube.com/watch?v=oorVWW9ywG0', songs: 'https://www.youtube.com/watch?v=rhJlGLqQb1M', album: 'https://www.youtube.com/watch?v=o3huN9z7-EM&list=PLQFLn45emZu1EWGwi39oR1JFyoeJHsXHv'},
     {icon: document.querySelector('.image10'), text: 'Drake имеет большой опыт в музыкальной индустрии. Большинство работ включает элементы как рэпа, так и пения, что сделало его уникальным как артиста', song: 'https://www.youtube.com/watch?v=vX9msKu75qs', songs: 'https://www.youtube.com/watch?v=Tqy5qaRF0lE', album: 'https://www.youtube.com/watch?v=VtEBRE9ul90&list=PLxA687tYuMWhs6U8nlUQSNQtpUNUMr3Ey'},
     {icon: document.querySelector('.image11'), text: 'За последний месяц стриминги Lil Baby набрали 26,5 млн на Spotify. В первую очередь известен своими песнями «Freestyle», «Yes indeed» и «Drip Too Hard»', song: 'https://www.youtube.com/watch?v=ieTnO1Dvt-I', songs: 'https://www.youtube.com/watch?v=BB7T1o8QhI8', album: 'https://www.youtube.com/watch?v=KUoEKy2uvTQ&list=PLPRWtKgY2MOsSblKiUFdMS-o_LXTb-fgr'}, 
@@ -47,9 +47,22 @@ let artistsExceptions = new Array();
 let buttonMore = document.querySelector('.buttonMore')
 let musicBlock = document.querySelector('.musicBlock')
 
+let buttonSong = document.querySelector('.song')
+let buttonSongs = document.querySelector('.songs')
+let buttonAlbum = document.querySelector('.album')
+
 button.addEventListener('click', function() {
+    buttonSong.classList.remove('show1')
+    buttonSong.style.display = 'none'
+
+    buttonSongs.classList.remove('show1')
+    buttonSongs.style.display = 'none'
+
+    buttonAlbum.classList.remove('show1')
+    buttonAlbum.style.display = 'none'
 
     musicBlock.style.display = 'none'
+
     buttonMore.classList.remove('show2')
 
     function removeTouch() {
@@ -116,17 +129,36 @@ button.addEventListener('click', function() {
     counter++
 })
 
-let buttonSong = document.querySelector('.song')
-let buttonSongs = document.querySelector('.songs')
-let buttonAlbum = document.querySelector('.album')
-
 buttonMore.addEventListener('click', function() {
-    buttonMore.classList.add('show2')
+    musicBlock.style.display = 'block'
 
-    function showMusicBlock() {
-        musicBlock.style.display = 'block'
+    buttonMore.classList.add('show2')
+    
+    function showButtonSong() {
+        buttonSong.classList.add('show1')
+        buttonSong.style.display = 'block'
     }
-    setTimeout(showMusicBlock, 500)
+
+    function showButtonSongs() {
+        buttonSongs.classList.add('show1')
+        buttonSongs.style.display = 'block'
+    }
+
+    function showButtonAlbum() {
+        buttonAlbum.classList.add('show1')
+        buttonAlbum.style.display = 'block'
+    }
+
+    function removingShow() {
+        buttonSong.classList.remove('show1')
+        buttonSongs.classList.remove('show1')
+        buttonAlbum.classList.remove('show1')
+    }
+
+    setTimeout(showButtonSong, 550)
+    setTimeout(showButtonAlbum, 750)
+    setTimeout(showButtonSongs, 950)
+    setTimeout(removingShow, 1450)
 })
 
 buttonSong.addEventListener('click', function() {
