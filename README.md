@@ -7,9 +7,9 @@ First repository after 2 weeks in frontend learning
 4. Script optimisation: no same elements, clearInterval() for info 'span' (in process)
 
 # Todo 
-- [ ] Set up a function call for artist info ('span' with clearInterval/letterTimeout = 0)
-- [ ] Set up second 'click' function call for button 'more'
-- [ ] Script + css code for section with class 'sectionMusic' (elements with changing position)
+- [x] Set up a function call for artist info ('span' with clearInterval/letterTimeout = 0/html code)
+- [x] Set up second 'click' function call for button 'more'
+- [x] Script + css code for section with class 'sectionMusic' (3 elements)
 - [x] Optimise app for github pages and for mobile version
   
 # Requirements
