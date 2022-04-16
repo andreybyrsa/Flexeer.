@@ -38,8 +38,6 @@ body {
 }
 
 @keyframes touchBlink {
-    /* from {background-color: #525252;}
-    to {background-color: #323131;} */
     from {opacity: 1;}
     to {opacity: 0;}
 }
@@ -99,17 +97,6 @@ body {
     text-align: center;
 }
 
-/* @keyframes slide {
-    from {
-        margin: auto;
-        padding-top: 15px;
-    }
-    to {
-        margin: 0;
-        padding-top: 50px;
-    }
-} */
-
 .show1 {
     display: block;
     animation: showBlock1 .5s linear forwards;
@@ -144,19 +131,22 @@ body {
     box-shadow: 4px 4px 3px white;
 }
 
-.artistInfo {
-    display: inline;
+.texts {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13, .text14, .text15{
+    display: none;
     position: relative;
-    top: 10px;
-    color: white;
     vertical-align: middle;
+    color: white;
     font-size: 14px;
 }
 
 .cursor {
     display: inline;
-    position: relative;
-    top: 10px;
     color: white;
     vertical-align: middle;
     animation: blink2 .8s infinite; 
