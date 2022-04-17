@@ -147,7 +147,7 @@ buttonMore.addEventListener('click', function() {
 
     function showButtonSongs() {
         buttonSongs.classList.add('show1')
-        buttåonSongs.style.display = 'block'
+        buttonSongs.style.display = 'block'
     }
 
     function showButtonAlbum() {
