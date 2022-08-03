@@ -14,4 +14,4 @@ First repository after 2 weeks in frontend learning
   
 # Requirements
 This work has already been added to the github pages, link:
-https://byrsa04.github.io/Flexeer./
+https://andreybyrsa.github.io/Flexeer./
