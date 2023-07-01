@@ -245,7 +245,7 @@ button {
   opacity: 0.5;
 }
 
-/* Responsive Styles */
+/* Adaptive Styles */
 
 @media (max-width: 860px) {
   .layout-page__header,
